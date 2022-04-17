@@ -46,9 +46,9 @@ def update_r(self):
 
 
 
-left_r = Player("lol.png",10, 10, 30, 100, 5)
-right_r = Player("lol2.png", 650, 10, 30, 100, 5)
-boll = GameSprite("gug.png", 200, 200, 50, 50, 2)
+left_r = Player("lol.png",10, 10, 90, 100, 5)
+right_r = Player("lol2.png", 600, 10, 90, 100, 5)
+boll = GameSprite("gug.png", 200, 200, 100, 60, 2)
 
 
 
@@ -61,7 +61,14 @@ while game:
         if e.type == QUIT:
             game = False
 
+        left_r.reset()
+        left_r.update()
+        right_r.reset()
+        right_r.update()
+        boll.reset()
+        boll.update()
 
 
-    display.update()
+
+        display.update()
 clock.tick(FPS)
