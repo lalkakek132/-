@@ -98,7 +98,7 @@ while game:
         left_r.update()
         right_r.reset()
         right_r.update_r()
-        boll.reset()
+        boll.reset() 
         boll.update()
 
        
